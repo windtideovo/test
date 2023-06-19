@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.1.0</version>
+    <!--
+      此处为什么需要添加该标签?
+      provided指的是在编译和测试过程中有效,最后生成的war包时不会加入
+       因为Tomcat的lib目录中已经有servlet-api这个jar包，如果在生成war包的时候生效就会和Tomcat中的jar包冲突，导致报错
+    -->
+    <scope>provided</scope>
+</dependency>

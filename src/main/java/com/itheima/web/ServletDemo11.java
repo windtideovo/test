@@ -1,0 +1,22 @@
+package com.itheima.web;
+
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebServlet;
+
+/**
+ * UrlPattern:
+ * * 任意匹配： /
+ */
+@WebServlet(urlPatterns = "/")
+public class ServletDemo11 extends MyHttpServlet {
+
+    @Override
+    protected void doGet(ServletRequest req, ServletResponse res) {
+
+        System.out.println("demo11 get...");
+    }
+    @Override
+    protected void doPost(ServletRequest req, ServletResponse res) {
+    }
+}
